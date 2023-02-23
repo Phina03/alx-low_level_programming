@@ -5,17 +5,22 @@
  */
 int main(void)
 {
-	int i = 0;
-	long fib1 = 1, fib2 = 2, sum = fib2;
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-	while (fib2 + fib1 < 4000000)
+	while (1)
 	{
-		fib2 += fib1;
-	if (fib2 % == 0)
-		sum += fib2;
-		fib1 = fib2 - fib1;
-		++i;
+		fibsum = fib1 + fib2;
+	if (fibsum > 4000000)
+		break;
+
+	if ((fibsum % 2) == 0)
+	tot_sum += fibsum;
+
+	fib1 = fib2;
+	fib2 = fibsum;
 	}
-		printf("%d\n", sum);
-		return (0);
+
+	printf("%.0f\n", tot_sum);
+	return (0);
 }
