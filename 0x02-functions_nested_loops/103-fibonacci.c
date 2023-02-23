@@ -5,21 +5,17 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int i = 0;
+	long fib1 = 1, fib2 = 2, sum = fib2;
 
-	for (count = 0; count < 50; count++)
+	while (fib2 + fib1 < 4000000)
 	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
-		fib1 = fib2;
-		fib2 = sum;
-
-	if (count == 49)
-		printf("\n");
-
-	else
-		printf(", ");
+		fib2 += fib1;
+	if (fib2 % == 0)
+		sum += fib2;
+		fib1 = fib2 - fib1;
+		++i;
 	}
-	return (0);
+		printf("%d\n", sum);
+		return (0);
 }
