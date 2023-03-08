@@ -1,9 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
- * _memcpy: Function that copies memory area
- * @dest: Memory area
- * @src: Source 
+ * _memcpy - Function that copies memory area
+ * @dest: Memory where value is stored
+ * @src: Memory where value is copied
  * @n: function to be copies
  * Return: dest
  */
